@@ -32,7 +32,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-import de.trier.infsec.koch.droidsheep.R;
+import com.zbrown.droidsteal.R;
 import de.trier.infsec.koch.droidsheep.activities.ListenActivity;
 import de.trier.infsec.koch.droidsheep.helper.Constants;
 import de.trier.infsec.koch.droidsheep.helper.DBHelper;

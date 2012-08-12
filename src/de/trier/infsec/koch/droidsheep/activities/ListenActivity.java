@@ -69,7 +69,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-import de.trier.infsec.koch.droidsheep.R;
+import com.zbrown.droidsteal.R;
 import de.trier.infsec.koch.droidsheep.auth.Auth;
 import de.trier.infsec.koch.droidsheep.auth.AuthHelper;
 import de.trier.infsec.koch.droidsheep.helper.Constants;
@@ -83,6 +83,7 @@ import de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker;
 import de.trier.infsec.koch.droidsheep.services.ArpspoofService;
 import de.trier.infsec.koch.droidsheep.services.DroidSheepService;
 
+@SuppressWarnings("unused")
 public class ListenActivity extends Activity implements OnClickListener, OnItemClickListener, OnItemLongClickListener,
 		OnCreateContextMenuListener, OnCheckedChangeListener, Constants {
 

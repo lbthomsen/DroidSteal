@@ -19,7 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.Toast;
-import de.trier.infsec.koch.droidsheep.R;
+import com.zbrown.droidsteal.R;
 import de.trier.infsec.koch.droidsheep.auth.AuthHelper;
 
 public class DialogHelper {

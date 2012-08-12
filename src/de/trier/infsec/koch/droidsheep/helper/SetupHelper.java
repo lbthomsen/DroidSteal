@@ -31,7 +31,7 @@ import java.io.InputStreamReader;
 
 import android.content.Context;
 import android.util.Log;
-import de.trier.infsec.koch.droidsheep.R;
+import com.zbrown.droidsteal.R;
 import de.trier.infsec.koch.droidsheep.activities.ListenActivity;
 
 public class SetupHelper {

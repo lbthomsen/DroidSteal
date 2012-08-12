@@ -30,7 +30,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import de.trier.infsec.koch.droidsheep.R;
+import com.zbrown.droidsteal.R;
 import de.trier.infsec.koch.droidsheep.activities.ListenActivity;
 import de.trier.infsec.koch.droidsheep.auth.Auth;
 

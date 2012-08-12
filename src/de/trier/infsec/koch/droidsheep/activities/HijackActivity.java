@@ -41,12 +41,13 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.Toast;
-import de.trier.infsec.koch.droidsheep.R;
+import com.zbrown.droidsteal.R;
 import de.trier.infsec.koch.droidsheep.auth.Auth;
 import de.trier.infsec.koch.droidsheep.helper.Constants;
 import de.trier.infsec.koch.droidsheep.helper.DBHelper;
 import de.trier.infsec.koch.droidsheep.objects.CookieWrapper;
 
+@SuppressWarnings("unused")
 public class HijackActivity extends Activity implements Constants {
 	private WebView webview = null;
 	private Auth authToHijack = null;
