@@ -30,12 +30,12 @@
 		android:singleLine="true"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content" />
-	<de.trier.infsec.koch.droidsheep.objects.SessionListView
+	<com.zbrown.droidsteal.objects.SessionListView
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"
 		android:layout_weight="1.0"
 		android:divider="#FFCC00"
-		android:id="@+id/sessionlist"></de.trier.infsec.koch.droidsheep.objects.SessionListView>
+		android:id="@+id/sessionlist"></com.zbrown.droidsteal.objects.SessionListView>
 	<LinearLayout
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
