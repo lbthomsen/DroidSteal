@@ -46,12 +46,10 @@ public class AuthListAdapter extends BaseAdapter {
 		return ListenActivity.authList.size();
 	}
 
-	@Override
 	public Auth getItem(int position) {
 		return ListenActivity.authList.get(position);
 	}
 
-	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 
 		LinearLayout itemLayout = (LinearLayout) LayoutInflater.from(context).inflate(R.layout.listelement, parent, false);
@@ -110,7 +108,6 @@ public class AuthListAdapter extends BaseAdapter {
 		return itemLayout;
 	}
 
-	@Override
 	public long getItemId(int position) {
 		return position;
 	}

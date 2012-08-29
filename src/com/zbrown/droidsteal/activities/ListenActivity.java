@@ -310,7 +310,6 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 	//                           START LISTENER METHODS
 	// ############################################################################
 
-	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 		if (view == null) {
 			return;
@@ -331,7 +330,6 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 		}
 	}
 
-	@Override
 	public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 		onItemClick(parent, view, position, id);
 		return false;
@@ -396,7 +394,6 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 		return true;
 	}
 
-	@Override
 	public void onClick(View v) {
 		if (v.getId() == R.id.bstartstop) {
 			Message m = handler.obtainMessage();
@@ -465,7 +462,6 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 		return super.onKeyDown(keyCode, event);
 	}
 
-	@Override
 	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 		if (buttonView.equals(cbgeneric)) {
 			ListenActivity.generic = isChecked;

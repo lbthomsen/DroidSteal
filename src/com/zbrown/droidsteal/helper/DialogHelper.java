@@ -122,7 +122,6 @@ public class DialogHelper {
 		};
 		al.setView(layout);
 		al.setButton("OK", new DialogInterface.OnClickListener() {
-			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				CheckBox cb = (CheckBox) layout.findViewById(R.id.lic_ack);
 				if (!cb.isChecked()) {
