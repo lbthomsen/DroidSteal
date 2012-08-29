@@ -38,5 +38,18 @@
 			android:textSize="13dip"
 			android:textColor="#fff"
 			android:layout_marginLeft="10dip" />
+		<TextView
+			android:id="@+id/listtext3"
+			android:layout_width="fill_parent"
+			android:ellipsize="end"
+			android:lines="1"
+			android:singleLine="true"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="left"
+			android:layout_below="@id/listtext2"
+			android:textSize="13dip"
+			android:textColor="#fff"
+			android:layout_marginLeft="10dip" />
 	</RelativeLayout>
 </LinearLayout>
