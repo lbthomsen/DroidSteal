@@ -1,10 +1,10 @@
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.zbrown.droidsteal"
-	android:versionName="1.1b1" android:versionCode="1011">
+	android:versionName="1.1b2" android:versionCode="1012">
 	<application
 		android:icon="@drawable/launcherico"
-		android:label="DroidSteal">
+		android:label="DroidSteal" android:hardwareAccelerated="true" android:largeHeap="true" android:allowClearUserData="true">
 		<activity
 			android:configChanges="orientation|keyboardHidden"
 			android:name=".activities.ListenActivity"

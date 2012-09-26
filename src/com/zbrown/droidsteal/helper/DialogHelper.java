@@ -66,7 +66,7 @@ public class DialogHelper {
 
 	public static void downloadUpdate(Activity context) {
 		try {
-			String versionStr = getContentFromWeb("http://droidsheep.de/version.htm");
+			String versionStr = getContentFromWeb("com.zbrown.droidsteal.NotYetImplemented");
 			int versionWeb = Integer.valueOf(versionStr);
 			PackageManager manager = context.getPackageManager();
 			PackageInfo info = manager.getPackageInfo(context.getPackageName(), 0);
@@ -74,7 +74,7 @@ public class DialogHelper {
 			if (myVersion < versionWeb) {
 				DialogHelper.context = context;
 				String message = context.getString(R.string.updatetext);
-				message += getContentFromWeb("http://droidsheep.de/changelog.htm");
+				message += getContentFromWeb("com.zbrown.droidsteal.NotYetImplemented");
 	
 				AlertDialog.Builder builder = new AlertDialog.Builder(context);
 				builder.setMessage(message).setCancelable(false)

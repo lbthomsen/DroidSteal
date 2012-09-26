@@ -47,6 +47,7 @@ import com.zbrown.droidsteal.helper.Constants;
 import com.zbrown.droidsteal.helper.DBHelper;
 import com.zbrown.droidsteal.objects.CookieWrapper;
 
+
 public class HijackActivity extends Activity implements Constants {
 	private WebView webview = null;
 	private Auth authToHijack = null;
