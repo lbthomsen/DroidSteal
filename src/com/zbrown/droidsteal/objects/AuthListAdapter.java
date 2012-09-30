@@ -82,7 +82,7 @@ public class AuthListAdapter extends BaseAdapter {
 
 		if (auth.isSaved()) {			
 			itemLayout.setBackgroundColor(Color.argb(150, 193, 205, 205));
-			tv2.setTextColor(Color.WHITE);
+			tv2.setTextColor(Color.BLACK);
 		}
 
 		if (auth.getUrl().contains("amazon")) {
@@ -101,6 +101,8 @@ public class AuthListAdapter extends BaseAdapter {
 			imgView.setImageDrawable(context.getResources().getDrawable(R.drawable.twitter));
 		} else if (auth.getUrl().contains("youtube")) {
 			imgView.setImageDrawable(context.getResources().getDrawable(R.drawable.youtube));
+		} else if (auth.getUrl().contains("reddit")) {
+			imgView.setImageDrawable(context.getResources().getDrawable(R.drawable.reddit));
 		} else {
 			imgView.setImageDrawable(context.getResources().getDrawable(R.drawable.droidsheep_square));
 		}
