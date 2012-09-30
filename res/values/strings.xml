@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">DroidSteal</string>
     <string name="license">DroidSteal comes with absolutely no warranty.\n\nYou use this software on your own risk.\nThe developer is not responsible for any damages caused by DroidSteal or its usage.\nIt is only the users responsibility to check his countrys laws in order to make sure that the usage of DroidSteal is permitted by law in his country. In some countries stealing someones identity might be prohibited by law.\n\nAlways think about what you are doing! Stealing someones identity can cause real trouble! So basically I am not responsible and cannot be held accountable for how YOU choose to use this tool.\n</string>
-    <string name="unrooted">YOUR PHONE SEEMS NOT TO BE ROOTED\n\nDroidSteal can only run on phones having superuser access enabled. So if the phone is not rooted and DroidSteal does not work properly, please do not ask for support! Nevertheless, DroidSteal will start for compatibility reasons</string>
+    <string name="unrooted">YOUR DEVICE SEEMS TO BE UN-ROOTED\n\nDroidSteal can only run on rooted devices. So if the device is not rooted and DroidSteal does not work properly, please do not ask for support! Nevertheless, DroidSteal will start for compatibility reasons</string>
     <string name="accept">I understand and accept the disclaimer</string>
     <string name="button_stop">Stop</string>
 	<string name="button_start">Start</string>
@@ -22,7 +22,7 @@
 	<string name="cbgeneric">Generic mode</string>
 	<string name="cbarpspoof">ARP-Spoofing</string>
 
-	<string name="installbusybox">Busybox should be installed in order to run DroidSteal properly. Do you want to install BusyBox from market?</string>
+	<string name="installbusybox">Busybox should be installed in order to run DroidSteal properly. Do you want to install BusyBox from Google Play?</string>
 	
 	<string name="menu_black_list">Add host to blacklist</string>
 	<string name="menu_save">Save cookies</string>
@@ -41,14 +41,14 @@
 	<string name="button_ok">Yes</string>
 	<string name="button_abprt">Abort</string>
 	<string name="accept_text">You must accept this disclaimer in order to use DroidSteal!</string>
-	<string name="popup_exit">Do you really want to exit DroidSteal? If you want to keep it running in background press HOME button!</string>
+	<string name="popup_exit">Do you really want to exit DroidSteal? If you want to keep it running/listening in the background press the HOME button!</string>
 	<string name="popup_debug">This will start a debug session. It will start Listening and collect debug information. Let DroidSteal keep listening for some seconds (at least 30) and press &quot;stop&quot;. An email will open which contains all debug information. No data will be sent silently!\n\n Email this data to &quot;Zbob75x@gmail.com&quot; for support and help!</string>
 	<string name="updatetext">There is an update available!\nActually there is no automatic update mechanism, but you can uninstall DroidSteal and pester him to get the new version manually .\nChanges: </string>
 	
-	<string name="changeurl">change address</string>
-	<string name="customurl">choose custom URL to load with hijacked cookies</string>
-	<string name="back">BACK</string>
-	<string name="forward">FORWARD</string>
-	<string name="close">CLOSE</string>
-	<string name="reload">RELOAD</string>
+	<string name="changeurl">Change Address</string>
+	<string name="customurl">Choose custom URL to load with hijacked cookies</string>
+	<string name="back">Back</string>
+	<string name="forward">Forward</string>
+	<string name="close">Close</string>
+	<string name="reload">Refresh/Reload</string>
 </resources>
