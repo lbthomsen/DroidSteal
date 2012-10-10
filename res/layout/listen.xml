@@ -2,10 +2,10 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:padding="10px"
+	android:padding="6dp"
 	android:orientation="vertical">
 	<!-- <Button android:layout_width="fill_parent" android:id="@+id/bspoof" android:layout_height="wrap_content" android:enabled="true" android:text="start ARP spoofing"></Button> -->
-
+	
 	<TextView
 		android:text="TEST"
 		android:id="@+id/networkname"
@@ -65,7 +65,7 @@
 	<LinearLayout
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/linearLayout1"
+		android:id="@+id/linearLayout2"
 		android:gravity="center">
 		<ProgressBar
 			android:id="@+id/progressBar1"
@@ -89,7 +89,6 @@
 			android:id="@+id/bstartstop"
 			android:enabled="true"
 			android:textSize="12sp"
-			android:layout_toRightOf="@id/status"
 			android:text="Start"></Button>
 	</LinearLayout>
 </LinearLayout>
