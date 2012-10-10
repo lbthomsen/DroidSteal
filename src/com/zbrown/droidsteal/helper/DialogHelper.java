@@ -137,7 +137,6 @@ public class DialogHelper {
 		al.setCancelable(false);
 		al.show();
 	}
-
 	private static String getContentFromWeb(String url) {
 		try {
 			DefaultHttpClient httpclient = new DefaultHttpClient();

@@ -86,6 +86,8 @@ import com.zbrown.droidsteal.services.DroidSheepService;
 public class ListenActivity extends Activity implements OnClickListener, OnItemClickListener, OnItemLongClickListener,
 		OnCreateContextMenuListener, OnCheckedChangeListener, Constants {
 
+	private static final int ID_ABOUT = 5;
+	private static final int MENU_ABOUT_ID = 5;
 	private static ArrayList<Auth> authListUnsynchronized = new ArrayList<Auth>();
 	public static List<Auth> authList = Collections.synchronizedList(authListUnsynchronized);
 	
@@ -439,6 +441,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 		menu.add(0, MENU_CLEAR_SESSIONLIST_ID, 0, getString(R.string.menu_clear_sessionlist));
 		menu.add(0, MENU_CLEAR_BLACKLIST_ID, 0, getString(R.string.menu_blacklist_clear));
 		menu.add(0, MENU_DEBUG_ID, 0, getString(R.string.menu_debug));
+		menu.add(0, MENU_ABOUT_ID, 0, getString(R.string.menu_about));
 		return true;
 	}
 
@@ -708,7 +711,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 		PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
 
 		if (persistent) {
-			notification.setLatestEventInfo(context, "DroidSheep is listening for sessions",
+			notification.setLatestEventInfo(context, "DroidSteal is listening for sessions",
 					getString(R.string.notification_text), contentIntent);
 		} else {
 			notification.setLatestEventInfo(context, getString(R.string.notification_title),
