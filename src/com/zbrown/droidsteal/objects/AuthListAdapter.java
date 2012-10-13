@@ -106,7 +106,7 @@ public class AuthListAdapter extends BaseAdapter {
 		} else if (auth.getUrl().contains("edmodo")) {
 			imgView.setImageDrawable(context.getResources().getDrawable(R.drawable.edmodo));
 		} else {
-			imgView.setImageDrawable(context.getResources().getDrawable(R.drawable.droidsheep_square));
+			imgView.setImageDrawable(context.getResources().getDrawable(R.drawable.droidsteal_square));
 		}
 
 		return itemLayout;
