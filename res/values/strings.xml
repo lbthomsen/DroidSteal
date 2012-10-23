@@ -43,7 +43,7 @@
 	<string name="accept_text">You must accept this disclaimer in order to use DroidSteal!</string>
 	<string name="popup_exit">Do you really want to exit DroidSteal? If you want to keep it running/listening in the background press the HOME button!</string>
 	<string name="popup_debug">This will start a debug session. It will start Listening and collect debug information. Let DroidSteal keep listening for some seconds (at least 30) and press &quot;stop&quot;. An email will open which contains all debug information. No data will be sent silently!\n\n Email this data to &quot;Zbob75x@gmail.com&quot; for support and help!</string>
-	<string name="updatetext">There is an update available!\nActually there is no automatic update mechanism, but you can uninstall DroidSteal and pester him to get the new version manually .\nChanges: </string>
+	<string name="updatetext">There is an update available!\nActually there is no automatic update mechanism, but you can uninstall DroidSteal and grab the new version fro GitHub.\nChanges: </string>
 	
 	<string name="changeurl">Change Address</string>
 	<string name="customurl">Choose custom URL to load with hijacked cookies</string>
