@@ -51,7 +51,7 @@
 	<string name="forward">Forward</string>
 	<string name="close">Close</string>
 	<string name="reload">Refresh/Reload</string>
-	<string name="about">DroidSteal, Network Penetration and Administration reimagined and redesigned. \n\nDroidSteal is Open Source! \nFeel Free to Contribute!\n\n Version 1.1b3 \n\nCreated by Zach Brown (Zbob750) \n\nFor use only on networks that you have permission for.</string>
+	<string name="about">DroidSteal, Network Penetration and Administration reimagined and redesigned. \n\nDroidSteal is Open Source! \nFeel Free to Contribute!\n\nVersion 1.1b3 \n\nCreated by Zach Brown (Zbob750) \n\nFor use only on networks that you have permission for.</string>
 	<string name="menu_about">About</string>
 	<string name="button_close">Dismiss</string>
 	<string name="version_name">1.1b3</string>
