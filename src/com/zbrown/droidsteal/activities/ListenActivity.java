@@ -69,6 +69,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.zbrown.droidsteal.R;
 import com.zbrown.droidsteal.auth.Auth;
 import com.zbrown.droidsteal.auth.AuthHelper;
@@ -86,7 +87,6 @@ import com.zbrown.droidsteal.services.DroidSheepService;
 public class ListenActivity extends Activity implements OnClickListener, OnItemClickListener, OnItemLongClickListener,
 		OnCreateContextMenuListener, OnCheckedChangeListener, Constants {
 
-	private static final int ID_ABOUT = 5;
 	private static final int MENU_ABOUT_ID = 5;
 	private static ArrayList<Auth> authListUnsynchronized = new ArrayList<Auth>();
 	public static List<Auth> authList = Collections.synchronizedList(authListUnsynchronized);
@@ -353,6 +353,9 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 			break;
 		case MENU_CLEAR_BLACKLIST_ID:
 			DialogHelper.clearBlacklist(this);
+			break;
+		case MENU_ABOUT_ID:
+			DialogHelper.about(this);
 			break;
 		}
 		return false;

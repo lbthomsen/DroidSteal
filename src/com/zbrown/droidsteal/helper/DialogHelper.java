@@ -45,7 +45,19 @@ public class DialogHelper {
 		AlertDialog alert = builder.create();
 		alert.show();
 	}
-
+	public static void about(Activity context) {
+		DialogHelper.context = context;
+		AlertDialog.Builder builder = new AlertDialog.Builder(context);
+		builder.setMessage(R.string.about). setCancelable(false)
+			.setPositiveButton(R.string.button_close, new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int id) {
+					dialog.cancel();
+					}
+				});
+		AlertDialog alert = builder.create();
+		alert.show();
+	}
+			
 	public static void clearBlacklist(Activity context) {
 		DialogHelper.context = context;
 		AlertDialog.Builder builder = new AlertDialog.Builder(context);
