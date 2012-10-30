@@ -1,7 +1,7 @@
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.zbrown.droidsteal"
-	android:versionName="1.1b3" android:versionCode="113">
+	android:versionName="1.1b4" android:versionCode="114">
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
