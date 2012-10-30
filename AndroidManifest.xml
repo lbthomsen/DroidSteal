@@ -2,11 +2,13 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.zbrown.droidsteal"
 	android:versionName="1.1b4" android:versionCode="114">
+	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="16"></uses-sdk>
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
 	<uses-permission android:name="com.google.android.gm.permission.WRITE_GMAIL"/>
-	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="16"></uses-sdk>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 	<application
 		android:icon="@drawable/launcherico"
 		android:label="DroidSteal" android:hardwareAccelerated="true" android:largeHeap="true" android:allowClearUserData="true">
