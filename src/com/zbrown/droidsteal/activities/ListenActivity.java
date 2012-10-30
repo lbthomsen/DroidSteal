@@ -705,7 +705,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 			return;
 		lastNotification = authList.size();
 
-		int icon = R.drawable.droidsteal_square;
+		int icon = R.drawable.droidsteal_notification;
 		long when = System.currentTimeMillis();
 		Notification notification = new Notification(icon, getString(R.string.notification_title), when);
 
