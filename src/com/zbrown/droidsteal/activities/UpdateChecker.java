@@ -54,11 +54,11 @@ public class UpdateChecker {
 	// The name of the saved file
 	public String localApkName = "DroidSteal.apk";
 	// The dialog that tells you to update
-	public String alertTitle = "Update now";
+	public String alertTitle = "Update Available";
 	// public String alertMessage = "Download file and install";
 	// The dialog which notifies there was an error checking for updates
 	public String alertTitleError = "Download error";
-	public String alertMessageError = "There was an error downloading the file\nPlease check github.com/Zbob750/DroidSteal for latest update";
+	public String alertMessageError = "There was an error downloading the file.\n\nPlease check github.com/Zbob750/DroidSteal for latest update and information.";
 	// Download progress text
 	public String progressMessage = "Downloading file...";
 
@@ -76,7 +76,7 @@ public class UpdateChecker {
 	 * 
 	 * @param c
 	 *            The activity to be used for displaying the messages
-	 * @param versionUrl
+	 * @param VERSION_URL
 	 *            The url of the file containing the version name
 	 * @param remoteApkUrl
 	 *            The url of the apk
@@ -150,7 +150,7 @@ public class UpdateChecker {
 					.setTitle(alertTitle)
 					.setMessage(R.string.updatetext)
 					.setCancelable(true)
-					.setPositiveButton("Ok",
+					.setPositiveButton("OK",
 							new DialogInterface.OnClickListener() {
 								public void onClick(DialogInterface dialog,
 										int whichButton) {
