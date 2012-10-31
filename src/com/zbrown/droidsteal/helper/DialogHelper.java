@@ -76,33 +76,6 @@ public class DialogHelper {
 		alert.show();
 	}
 
-	public static void downloadUpdate(Activity context) {
-		try {
-			String versionStr = getContentFromWeb("com.zbrown.droidsteal.NotYetImplemented");
-			int versionWeb = Integer.valueOf(versionStr);
-			PackageManager manager = context.getPackageManager();
-			PackageInfo info = manager.getPackageInfo(context.getPackageName(), 0);
-			int myVersion = info.versionCode;
-			if (myVersion < versionWeb) {
-				DialogHelper.context = context;
-				String message = context.getString(R.string.updatetext);
-				message += getContentFromWeb("com.zbrown.droidsteal.NotYetImplemented");
-	
-				AlertDialog.Builder builder = new AlertDialog.Builder(context);
-				builder.setMessage(message).setCancelable(false)
-						.setPositiveButton(R.string.button_ok, new DialogInterface.OnClickListener() {
-							public void onClick(DialogInterface dialog, int id) {
-								dialog.cancel();
-							}
-						});
-				AlertDialog alert = builder.create();
-				alert.show();
-			}
-		} catch (Exception e) {
-			Log.e(Constants.APPLICATION_TAG, "Error while checking update: ", e);
-		}
-	}
-
 	public static void showUnrooted(Activity context) {
 		DialogHelper.context = context;
 		AlertDialog.Builder builder = new AlertDialog.Builder(context);
