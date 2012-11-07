@@ -278,7 +278,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 
 		if (dif > (1 * 24 * 60 * 60 * 1000)) { // show once per day. (I think)
 			// Update Checker
-			String VERSION_URL = "https://raw.github.com/Zbob750/DroidSteal/master/update_version.html";
+			String VERSION_URL = "https://raw.github.com/Zbob750/DroidSteal/master/update_version.php";
 			String REMOTE_APK_URL = " "; // I need to figure out how I want to do this still. :(
 			int ALERT_ICON = R.drawable.droidsteal_square;
 			UpdateChecker uc = new UpdateChecker(this, VERSION_URL,
