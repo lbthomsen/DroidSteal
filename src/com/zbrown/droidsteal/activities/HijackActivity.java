@@ -26,7 +26,6 @@ import org.apache.http.cookie.Cookie;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -44,7 +43,6 @@ import android.widget.Toast;
 import com.zbrown.droidsteal.R;
 import com.zbrown.droidsteal.auth.Auth;
 import com.zbrown.droidsteal.helper.Constants;
-import com.zbrown.droidsteal.helper.DBHelper;
 import com.zbrown.droidsteal.objects.CookieWrapper;
 
 
@@ -101,6 +99,7 @@ public class HijackActivity extends Activity implements Constants {
 		webSettings.setAppCacheEnabled(false);
 		webSettings.setBuiltInZoomControls(true);
 		webview.setWebChromeClient(new WebChromeClient() {
+			@Override
 			public void onProgressChanged(WebView view, int progress) {
 				HijackActivity.this.setProgress(progress * 100);
 			}
@@ -176,7 +175,7 @@ public class HijackActivity extends Activity implements Constants {
 	protected void onStart() {
 		super.onStart();
 		
-		Object o = this.getIntent().getExtras().getSerializable(ListenActivity.BUNDLE_KEY_AUTH);
+		Object o = this.getIntent().getExtras().getSerializable(Constants.BUNDLE_KEY_AUTH);
 		authToHijack = (Auth) o;
 
 		if (authToHijack == null) {

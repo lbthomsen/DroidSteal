@@ -102,6 +102,7 @@ public class UpdateChecker {
 		if (checkUpdate == null || !checkUpdate.isAlive()
 				|| checkUpdate.isInterrupted()) {
 			checkUpdate = new Thread() {
+				@Override
 				public void run() {
 					checkupdate();
 				}

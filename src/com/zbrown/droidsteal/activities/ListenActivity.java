@@ -43,7 +43,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
-import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -318,7 +317,8 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 	//                           START LISTENER METHODS
 	// ############################################################################
 
-	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+	public void onItemClick(AdapterView<?> parent, View view, int position,
+			long id) {
 		if (view == null) {
 			return;
 		}
@@ -329,11 +329,16 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 
 		if (view != null) {
 			sessionListViewSelected = position;
+			// SpoofURL =
+			// ((TextView)view.findViewById(R.id.listtext1)).getText().toString();
+			// auth = ListenActivity.authList.get(position);
 			try {
 				sessionListView.showContextMenuForChild(view);
 			} catch (Exception e) {
-				// VERY BAD, but actually can�t find out how the NPE happens... :-(
-				Log.d(APPLICATION_TAG, "error on click: " + e.getLocalizedMessage());
+				// VERY BAD, but actually cant find out how the NPE happens...
+				// :-(
+				Log.d(APPLICATION_TAG,
+						"error on click: " + e.getLocalizedMessage());
 			}
 		}
 	}
@@ -426,19 +431,19 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 			return;
 		actElem = authList.get(sessionListViewSelected);
 		menu.setHeaderTitle(getString(R.string.menu_choose_page_title));
-		menu.add(ContextMenu.NONE, ID_NORMAL, ContextMenu.NONE, getString(R.string.menu_open_normal));
-		menu.add(ContextMenu.NONE, ID_REMOVEFROMLIST, ContextMenu.NONE, getString(R.string.menu_remove_from_list));
-		menu.add(ContextMenu.NONE, ID_BLACKLIST, ContextMenu.NONE, getString(R.string.menu_black_list));
-		menu.add(ContextMenu.NONE, ID_EXPORT, ContextMenu.NONE, getString(R.string.menu_export));
+		menu.add(Menu.NONE, ID_NORMAL, Menu.NONE, getString(R.string.menu_open_normal));
+		menu.add(Menu.NONE, ID_REMOVEFROMLIST, Menu.NONE, getString(R.string.menu_remove_from_list));
+		menu.add(Menu.NONE, ID_BLACKLIST, Menu.NONE, getString(R.string.menu_black_list));
+		menu.add(Menu.NONE, ID_EXPORT, Menu.NONE, getString(R.string.menu_export));
 
 		if (actElem.isSaved()) {
-			menu.add(ContextMenu.NONE, ID_DELETE, ContextMenu.NONE, getString(R.string.menu_delete));
+			menu.add(Menu.NONE, ID_DELETE, Menu.NONE, getString(R.string.menu_delete));
 		} else {
-			menu.add(ContextMenu.NONE, ID_SAVE, ContextMenu.NONE, getString(R.string.menu_save));
+			menu.add(Menu.NONE, ID_SAVE, Menu.NONE, getString(R.string.menu_save));
 		}
 
 		if (actElem.getMobileUrl() != null) {
-			menu.add(ContextMenu.NONE, ID_MOBILE, ContextMenu.NONE, getString(R.string.menu_open_mobile));
+			menu.add(Menu.NONE, ID_MOBILE, Menu.NONE, getString(R.string.menu_open_mobile));
 		}
 	}
 
@@ -627,7 +632,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 	private void cleanup() {
 		tstatus.setText(getString(R.string.label_not_running));
 		tstatus.setTextColor(Color.YELLOW);
-		pbrunning.setVisibility(ProgressBar.INVISIBLE);
+		pbrunning.setVisibility(View.INVISIBLE);
 		Button button = ((Button) findViewById(R.id.bstartstop));
 		button.setText("Start");
 		stopSpoofing();
@@ -666,22 +671,22 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 			tstatus.setText(getString(R.string.label_running));
 			tstatus.setTextColor(Color.GREEN);
 			tstatus.setTextSize(15);
-			pbrunning.setVisibility(ProgressBar.VISIBLE);
+			pbrunning.setVisibility(View.VISIBLE);
 		} else if (listening && spoofing) {
 			tstatus.setText(getString(R.string.label_running_and_spoofing));
 			tstatus.setTextColor(Color.GREEN);
 			tstatus.setTextSize(15);
-			pbrunning.setVisibility(ProgressBar.VISIBLE);
+			pbrunning.setVisibility(View.VISIBLE);
 		} else if (!listening && spoofing) {
 			tstatus.setText(getString(R.string.label_not_running_and_spoofing));
 			tstatus.setTextColor(Color.YELLOW);
 			tstatus.setTextSize(15);
-			pbrunning.setVisibility(ProgressBar.INVISIBLE);
+			pbrunning.setVisibility(View.INVISIBLE);
 		} else {
 			tstatus.setText(getString(R.string.label_not_running));
 			tstatus.setTextColor(Color.YELLOW);
 			tstatus.setTextSize(15);
-			pbrunning.setVisibility(ProgressBar.INVISIBLE);
+			pbrunning.setVisibility(View.INVISIBLE);
 		}
 
 	}

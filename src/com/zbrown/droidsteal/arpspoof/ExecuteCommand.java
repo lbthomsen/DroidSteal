@@ -54,6 +54,7 @@ public class ExecuteCommand extends Thread {
 		this.listen = listen;
 	}
 
+	@Override
 	public void run() {
 
 		class StreamGobbler extends Thread {
@@ -68,6 +69,7 @@ public class ExecuteCommand extends Thread {
 				buffReader = br;
 			}
 
+			@Override
 			public void run() {
 				try {
 					while(true) {
