@@ -133,7 +133,7 @@ public class UpdateChecker {
 					.setTitle(alertTitleError)
 					.setMessage(alertMessageError)
 					.setCancelable(true)
-					.setPositiveButton("Ok",
+					.setPositiveButton("OK",
 							new DialogInterface.OnClickListener() {
 								public void onClick(DialogInterface dialog,
 										int whichButton) {
