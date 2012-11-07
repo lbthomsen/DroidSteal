@@ -57,8 +57,8 @@ public class UpdateChecker {
 	public String alertTitle = "Update Available";
 	// public String alertMessage = "Download file and install";
 	// The dialog which notifies there was an error checking for updates
-	public String alertTitleError = "Download error";
-	public String alertMessageError = "There was an error downloading the file.\n\nPlease check github.com/Zbob750/DroidSteal for latest update and information.";
+	public String alertTitleError = "Download Error";
+	public String alertMessageError = "There was an error downloading the file.\n\nPlease check\ngithub.com/Zbob750/DroidSteal\nFor latest update and information.";
 	// Download progress text
 	public String progressMessage = "Downloading file...";
 
