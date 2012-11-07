@@ -2,8 +2,8 @@
 <authdefinitions>
 	<auth>
 		<name>Amazon</name>
-		<domain>amazon.de</domain>
-		<url>http://www.amazon.de</url>
+		<domain>amazon.com</domain>
+		<url>http://www.amazon.com</url>
 		<cookiename>x-acbde</cookiename>
 	</auth>
 	<auth>
@@ -62,8 +62,8 @@
 	</auth>
 	<auth>
 		<name>Google</name>
-		<domain>google.de</domain>
-		<url>http://www.google.de</url>
+		<domain>google.com</domain>
+		<url>http://www.google.com</url>
 		<cookiename>SID</cookiename>
 		<cookiename>NID</cookiename>
 		<cookiename>HSID</cookiename>
