@@ -18,6 +18,9 @@ Things to remember:
 
 6. Be Ethical
 
+Downloads
+=========
+All downloads are hosted here: http://sdrv.ms/TU4lj1
 
 Contact Me
 ==========
