@@ -9,7 +9,10 @@
 	<uses-permission android:name="com.google.android.gm.permission.WRITE_GMAIL"/>
 	<application
 		android:icon="@drawable/launcherico"
-		android:label="DroidSteal" android:hardwareAccelerated="true" android:largeHeap="true" android:allowClearUserData="true">
+		android:label="DroidSteal"
+		android:hardwareAccelerated="true"
+		android:largeHeap="true"
+		android:allowClearUserData="true">
 		<activity
 			android:screenOrientation="landscape"
 			android:configChanges="orientation|keyboardHidden"
