@@ -23,14 +23,11 @@ package com.zbrown.droidsteal.activities;
 
 import org.apache.http.cookie.Cookie;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
@@ -40,13 +37,18 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuItem;
+
 import com.zbrown.droidsteal.R;
 import com.zbrown.droidsteal.auth.Auth;
 import com.zbrown.droidsteal.helper.Constants;
 import com.zbrown.droidsteal.objects.CookieWrapper;
 
 
-public class HijackActivity extends Activity implements Constants {
+public class HijackActivity extends SherlockActivity implements Constants {
 	private WebView webview = null;
 	private Auth authToHijack = null;
 

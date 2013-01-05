@@ -33,7 +33,6 @@ import org.apache.http.util.ByteArrayBuffer;
 
 import com.zbrown.droidsteal.R;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -43,6 +42,8 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.util.Log;
+
+import com.actionbarsherlock.app.SherlockActivity;
 
 public class UpdateChecker {
 
@@ -69,7 +70,7 @@ public class UpdateChecker {
 
 	/* This Thread checks for Updates in the Background */
 	private Thread checkUpdate;
-	private Activity activity;
+	private SherlockActivity activity;
 
 	/**
 	 * Instantiates the update checker
@@ -83,7 +84,7 @@ public class UpdateChecker {
 	 * @param alertIcon
 	 *            The icon to show in the dialog, usually the application icon
 	 */
-	public UpdateChecker(Activity c, String versionUrl, String remoteApkUrl,
+	public UpdateChecker(SherlockActivity c, String versionUrl, String remoteApkUrl,
 			int alertIcon) {
 		this.activity = c;
 		this.context = c.getApplicationContext();
