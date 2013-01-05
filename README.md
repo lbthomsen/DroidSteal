@@ -20,7 +20,7 @@ Things to remember:
 
 Downloads
 =========
-All downloads are hosted here: http://sdrv.ms/TU4lj1
+All downloads are hosted here: http://goo.gl/P1xHa
 
 Contact Me
 ==========
