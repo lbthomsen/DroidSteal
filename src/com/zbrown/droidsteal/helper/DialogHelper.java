@@ -5,7 +5,8 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-import android.app.Activity;
+import com.actionbarsherlock.app.SherlockActivity;
+
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -21,9 +22,9 @@ import com.zbrown.droidsteal.auth.AuthHelper;
 
 public class DialogHelper {
 
-	private static Activity context = null;
+	private static SherlockActivity context = null;
 
-	public static void installBusyBox(Activity context) {
+	public static void installBusyBox(SherlockActivity context) {
 		DialogHelper.context = context;
 		AlertDialog.Builder builder = new AlertDialog.Builder(context);
 		builder.setMessage(R.string.installbusybox).setCancelable(false)
@@ -42,7 +43,7 @@ public class DialogHelper {
 		AlertDialog alert = builder.create();
 		alert.show();
 	}
-	public static void about(Activity context) {
+	public static void about(SherlockActivity context) {
 		DialogHelper.context = context;
 		AlertDialog.Builder builder = new AlertDialog.Builder(context);
 		builder.setMessage(R.string.about). setCancelable(false)
@@ -55,7 +56,7 @@ public class DialogHelper {
 		alert.show();
 	}
 			
-	public static void clearBlacklist(Activity context) {
+	public static void clearBlacklist(SherlockActivity context) {
 		DialogHelper.context = context;
 		AlertDialog.Builder builder = new AlertDialog.Builder(context);
 		builder.setMessage(R.string.clear_blacklist).setCancelable(false)
@@ -73,7 +74,7 @@ public class DialogHelper {
 		alert.show();
 	}
 
-	public static void showUnrooted(Activity context) {
+	public static void showUnrooted(SherlockActivity context) {
 		DialogHelper.context = context;
 		AlertDialog.Builder builder = new AlertDialog.Builder(context);
 		builder.setMessage(R.string.unrooted).setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -87,7 +88,7 @@ public class DialogHelper {
 
 	private static boolean disclaimerAccepted = false;
 
-	public static void showDisclaimer(Activity context) {
+	public static void showDisclaimer(SherlockActivity context) {
 		DialogHelper.context = context;
 
 		if (DialogHelper.disclaimerAccepted)
