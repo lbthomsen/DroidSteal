@@ -2,12 +2,14 @@ package com.zbrown.droidsteal.helper;
 
 import java.util.HashMap;
 
+import com.actionbarsherlock.app.SherlockActivity;
+
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-public class DBHelper {
+public class DBHelper extends SherlockActivity{
 
 	private static SQLiteDatabase droidsheepDB = null;
 	public static final String DROIDSHEEP_DBNAME = "droidsheep";
@@ -79,37 +81,6 @@ public class DBHelper {
 	public static void clearBlacklist(Context c) {
 		initDB(c);
 		droidsheepDB.execSQL("DELETE FROM DROIDSHEEP_BLACKLIST;", new Object[] {});
-		droidsheepDB.close();
-	}
-
-	public static long getLastDonateMessage(Context c) {
-		try {
-			initDB(c);
-			Cursor cur = droidsheepDB.rawQuery("SELECT value FROM DROIDSHEEP_PREFERENCES where name = 'donate';",
-					new String[] {});
-			cur.moveToFirst();
-			long datetime = cur.getLong(cur.getColumnIndex("value"));
-			return datetime;
-		} catch (Exception e) {
-			Log.d(Constants.APPLICATION_TAG, "Could not load last donate datetime: " + e.getLocalizedMessage());
-		} finally {
-			droidsheepDB.close();
-		}
-		return 0L;
-	}
-
-	public static void setLastDonateMessage(Context c, long date) {
-		initDB(c);
-		Cursor cur = droidsheepDB.rawQuery("SELECT count(id) as count FROM DROIDSHEEP_PREFERENCES where name = 'donate';", new String[] {});
-		cur.moveToFirst();
-		int count = (int) cur.getLong(cur.getColumnIndex("count"));
-		if (count == 0) {
-			droidsheepDB.execSQL("INSERT INTO DROIDSHEEP_PREFERENCES (name, value) values ('donate', ?);",
-					new String[] { Long.toString(date) });
-		} else {
-			droidsheepDB.execSQL("UPDATE DROIDSHEEP_PREFERENCES SET value=? WHERE name='donate';",
-					new String[] { Long.toString(date) });
-		}
 		droidsheepDB.close();
 	}
 	
